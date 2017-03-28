@@ -1,5 +1,7 @@
 asgi-redis==1.0.0
-channels==0.17.3
-daphne==0.15.0
+channels==1.1.1
+daphne==1.1.0
 Django==1.10.4
 six==1.10.0
+django-environ==0.4.1
+psycopg2==2.6.2

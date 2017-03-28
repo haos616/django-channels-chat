@@ -8,6 +8,7 @@ from channels.sessions import channel_session
 
 @channel_session
 def ws_add(message, room):
+    message.reply_channel.send({"accept": True})
     query = parse_qs(message['query_string'])
     if 'username' not in query:
         return
